@@ -76,7 +76,7 @@ const IndexPage = () => {
       <form
         name="plevin"
         method="post"
-        action="/thank-you"
+        action="/thank-you/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >  
@@ -456,6 +456,7 @@ const IndexPage = () => {
 
       <pre>{JSON.stringify(formik.values, null, 4)}</pre>
     </form>
+   
     </div>
   </Layout>
 )
