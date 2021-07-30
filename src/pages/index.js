@@ -82,16 +82,13 @@ const IndexPage = () => {
       >  
       <input type="hidden" name="form-name" value="plevin" />
 
-      {formStep === 0 && (     
+
           <section className="section">
             <h1>Have you had PPI before?</h1>
             <button onClick={completeFormStep} className="btn-blue" type="button">Yes</button>    
             <button className="btn-blue" type="button">NO</button>    
           </section>
-
-      )} 
-
-      {formStep === 1 && (         
+     
           <section className="section">
             <h1>Please select the banks you had PPI with:</h1>              
  
@@ -341,9 +338,7 @@ const IndexPage = () => {
             </div>                                                                    
             <button onClick={completeFormStep} className="btn-blue" type="button">Next step</button>    
           </section>  
-      )}
 
-      {formStep === 2 && (  
           <section className="section">
             <div class="grid grid-flow-row grid-col-3 gap-4">
 
@@ -407,9 +402,7 @@ const IndexPage = () => {
             </div>
             <button onClick={completeFormStep} className="btn-blue" type="button">Next step</button>     
           </section>  
-      )}
-
-      {formStep === 3 && (    
+ 
           <section className="section">
             <div class="grid grid-flow-row grid-col-3 gap-4"> 
 
@@ -452,7 +445,6 @@ const IndexPage = () => {
             </div>
             <button className="btn-green" type="submit">Submit</button>    
           </section>            
-      )}
 
       <pre>{JSON.stringify(formik.values, null, 4)}</pre>
     </form>
