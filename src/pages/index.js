@@ -98,7 +98,6 @@ const IndexPage = () => {
                     id="lloyds"
                     name="lloyds"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />    
               </div>  
               <div>
@@ -108,7 +107,6 @@ const IndexPage = () => {
                     id="barclays"                    
                     name="barclays"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>
 
@@ -119,7 +117,6 @@ const IndexPage = () => {
                     id="barclaycard"                    
                     name="barclaycard"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>
 
@@ -130,7 +127,6 @@ const IndexPage = () => {
                     id="natwest"                    
                     name="natwest"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>  
 
@@ -141,7 +137,6 @@ const IndexPage = () => {
                     id="rbs"                    
                     name="rbs"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>                
 
@@ -152,7 +147,6 @@ const IndexPage = () => {
                     id="tsb"                    
                     name="tsb"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div> 
 
@@ -163,7 +157,6 @@ const IndexPage = () => {
                     id="halifax"                    
                     name="halifax"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -174,7 +167,6 @@ const IndexPage = () => {
                     id="bankofscotland"                    
                     name="bankofscotland"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div> 
 
@@ -185,7 +177,6 @@ const IndexPage = () => {
                     id="hsbc"                    
                     name="hsbc"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -196,7 +187,6 @@ const IndexPage = () => {
                     id="capitalone"                    
                     name="capitalone"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div> 
 
@@ -207,7 +197,6 @@ const IndexPage = () => {
                     id="mbna"                    
                     name="mbna"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -218,7 +207,6 @@ const IndexPage = () => {
                     id="egg"                    
                     name="egg"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>  
 
@@ -229,7 +217,6 @@ const IndexPage = () => {
                     id="mint"                    
                     name="mint"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -240,7 +227,6 @@ const IndexPage = () => {
                     id="clydesdale"                    
                     name="clydesdale"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>   
 
@@ -251,7 +237,6 @@ const IndexPage = () => {
                     id="yorkshire"                    
                     name="yorkshire"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -262,7 +247,6 @@ const IndexPage = () => {
                     id="mands"                    
                     name="mands"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>  
 
@@ -273,7 +257,6 @@ const IndexPage = () => {
                     id="santander"                    
                     name="santander"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -284,7 +267,6 @@ const IndexPage = () => {
                     id="alliance"                    
                     name="alliance"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>  
 
@@ -296,7 +278,6 @@ const IndexPage = () => {
                     id="abbey"                    
                     name="abbey"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div> 
 
@@ -307,7 +288,6 @@ const IndexPage = () => {
                     id="blackhorse"                    
                     name="blackhorse"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
@@ -318,7 +298,6 @@ const IndexPage = () => {
                     id="northernrock"                    
                     name="northernrock"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>   
 
@@ -329,12 +308,10 @@ const IndexPage = () => {
                     id="coop"                    
                     name="coop"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>    
 
             </div>                                                                    
-            <button onClick={completeFormStep} className="btn-blue" type="button">Next step</button>    
           </section>  
 
           <section className="section">
@@ -356,9 +333,7 @@ const IndexPage = () => {
                 type="text"
                 id="firstName"                
                 name="firstName"
-                placeholder="Enter your first name"
-                onChange={formik.handleChange}
-                value={formik.values.firstName}                
+                placeholder="Enter your first name"             
               /> 
               </div>
 
@@ -368,9 +343,7 @@ const IndexPage = () => {
                 type="text"
                 id="lastName"                
                 name="lastName"
-                placeholder="Enter your last name"
-                onChange={formik.handleChange}
-                value={formik.values.lastName}                   
+                placeholder="Enter your last name"                  
               />  
               </div>    
 
@@ -379,9 +352,7 @@ const IndexPage = () => {
               <input   
                 type="date"
                 id="dob"                
-                name="dob"
-                onChange={formik.handleChange}
-                value={formik.values.dob}                  
+                name="dob"                
               />  
               </div>    
 
@@ -391,14 +362,11 @@ const IndexPage = () => {
                 type="text"
                 id="address"                
                 name="address"
-                placeholder="Your Address"
-                onChange={formik.handleChange}
-                value={formik.values.address}                  
+                placeholder="Your Address"                  
               />  
               </div>                    
 
             </div>
-            <button onClick={completeFormStep} className="btn-blue" type="button">Next step</button>     
           </section>  
  
           <section className="section">
@@ -411,8 +379,6 @@ const IndexPage = () => {
                 id="email"                
                 name="email"
                 placeholder="Enter your email"                
-                onChange={formik.handleChange}
-                value={formik.values.email}
               />  
               </div> 
 
@@ -423,8 +389,6 @@ const IndexPage = () => {
                 id="tel"                
                 name="tel"
                 placeholder="Enter your number"                
-                onChange={formik.handleChange}
-                value={formik.values.tel}
 
               />  
               </div>  
@@ -436,12 +400,10 @@ const IndexPage = () => {
                     id="privacy"                    
                     name="privacy"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
               </div>                                       
 
             </div>
-            <button className="btn-green" type="submit">Submit</button>    
           </section>            
     </form>
 
