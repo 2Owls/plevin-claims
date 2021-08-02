@@ -75,10 +75,7 @@ const IndexPage = () => {
         name="plevin"
         method="post"
         action="/thank-you/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >  
-      <input type="hidden" name="form-name" value="plevin" />
 
 
           <section className="section">
