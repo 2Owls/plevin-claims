@@ -475,7 +475,6 @@ const IndexPage = () => {
                     id="lloyds"
                     name="lloyds"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />    
                 <label htmlFor="checkbox" className="mr-2">Barclays:</label>
                 <input
@@ -483,7 +482,6 @@ const IndexPage = () => {
                     id="barclays"                    
                     name="barclays"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Barclaycard:</label>
                 <input
@@ -491,7 +489,6 @@ const IndexPage = () => {
                     id="barclaycard"                    
                     name="barclaycard"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Natwest:</label>
                 <input
@@ -499,7 +496,6 @@ const IndexPage = () => {
                     id="natwest"                    
                     name="natwest"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">RBS:</label>
                 <input
@@ -507,7 +503,6 @@ const IndexPage = () => {
                     id="rbs"                    
                     name="rbs"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">TSB:</label>
                 <input
@@ -515,7 +510,6 @@ const IndexPage = () => {
                     id="tsb"                    
                     name="tsb"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Halifax:</label>
                 <input
@@ -523,7 +517,6 @@ const IndexPage = () => {
                     id="halifax"                    
                     name="halifax"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Bank of Scotland:</label>
                 <input
@@ -531,7 +524,6 @@ const IndexPage = () => {
                     id="bankofscotland"                    
                     name="bankofscotland"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">HSBC:</label>
                 <input
@@ -539,7 +531,6 @@ const IndexPage = () => {
                     id="hsbc"                    
                     name="hsbc"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Capital One:</label>
                 <input
@@ -547,7 +538,6 @@ const IndexPage = () => {
                     id="capitalone"                    
                     name="capitalone"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">MBNA:</label>
                 <input
@@ -555,7 +545,6 @@ const IndexPage = () => {
                     id="mbna"                    
                     name="mbna"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">EGG:</label>
                 <input
@@ -563,7 +552,6 @@ const IndexPage = () => {
                     id="egg"                    
                     name="egg"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Mint:</label>
                 <input
@@ -571,7 +559,6 @@ const IndexPage = () => {
                     id="mint"                    
                     name="mint"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Clydesdale Bank:</label>
                 <input
@@ -579,7 +566,6 @@ const IndexPage = () => {
                     id="clydesdale"                    
                     name="clydesdale"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Yorkshire Bank:</label>
                 <input
@@ -587,7 +573,6 @@ const IndexPage = () => {
                     id="yorkshire"                    
                     name="yorkshire"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">M&amp;S Bank:</label>
                 <input
@@ -595,7 +580,6 @@ const IndexPage = () => {
                     id="mands"                    
                     name="mands"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Santander:</label>
                 <input
@@ -603,7 +587,6 @@ const IndexPage = () => {
                     id="santander"                    
                     name="santander"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Alliance &amp; Leicester:</label>
                 <input
@@ -611,7 +594,6 @@ const IndexPage = () => {
                     id="alliance"                    
                     name="alliance"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Abbey National:</label>
                 <input
@@ -619,7 +601,6 @@ const IndexPage = () => {
                     id="abbey"                    
                     name="abbey"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Black Horse:</label>
                 <input
@@ -627,7 +608,6 @@ const IndexPage = () => {
                     id="blackhorse"                    
                     name="blackhorse"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Northern Rock:</label>
                 <input
@@ -635,7 +615,6 @@ const IndexPage = () => {
                     id="northernrock"                    
                     name="northernrock"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                 <label htmlFor="checkbox" className="mr-2">Co-operative Bank:</label>
                 <input
@@ -643,11 +622,10 @@ const IndexPage = () => {
                     id="coop"                    
                     name="coop"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />   
                                                               
               <label htmlFor="title" class="mr-2">Title:</label>
-                <select value={formik.values.title} onChange={formik.handleChange} name="title">
+                <select name="title">
                 <option value="title">Title</option>                  
                   <option value="mr">Mr</option>
                   <option value="mrs">Mrs</option>
@@ -659,9 +637,7 @@ const IndexPage = () => {
                 type="text"
                 id="firstName"                
                 name="firstName"
-                placeholder="Enter your first name"
-                onChange={formik.handleChange}
-                value={formik.values.firstName}                
+                placeholder="Enter your first name"             
               /> 
 
               <label htmlFor="lastname" class="mr-2">Last Name:</label>
@@ -669,18 +645,14 @@ const IndexPage = () => {
                 type="text"
                 id="lastName"                
                 name="lastName"
-                placeholder="Enter your last name"
-                onChange={formik.handleChange}
-                value={formik.values.lastName}                   
+                placeholder="Enter your last name"                
               />     
 
               <label htmlFor="dob"  class="mr-2">Date of Birth:</label>
               <input   
                 type="date"
                 id="dob"                
-                name="dob"
-                onChange={formik.handleChange}
-                value={formik.values.dob}                  
+                name="dob"                
               />    
 
               <label htmlFor="address" class="mr-2">Your Address:</label>
@@ -688,9 +660,7 @@ const IndexPage = () => {
                 type="text"
                 id="address"                
                 name="address"
-                placeholder="Your Address"
-                onChange={formik.handleChange}
-                value={formik.values.address}                  
+                placeholder="Your Address"                
               />                   
 
               <label htmlFor="email"  class="mr-2">Email:</label>
@@ -699,8 +669,6 @@ const IndexPage = () => {
                 id="email"                
                 name="email"
                 placeholder="Enter your email"                
-                onChange={formik.handleChange}
-                value={formik.values.email}
               />  
 
               <label htmlFor="tel"  class="mr-2">Telephone:</label>
@@ -709,8 +677,6 @@ const IndexPage = () => {
                 id="tel"                
                 name="tel"
                 placeholder="Enter your number"                
-                onChange={formik.handleChange}
-                value={formik.values.tel}
 
               />  
 
@@ -720,7 +686,6 @@ const IndexPage = () => {
                     id="privacy"                    
                     name="privacy"
                     value="yes"                
-                    onChange={formik.handleChange}
                   />                                               
     </form>
 
