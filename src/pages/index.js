@@ -74,11 +74,11 @@ const IndexPage = () => {
               <form  
                   name="contact"
                   method="POST"
-                  data-netlify="true"
+                  netlify
                   data-netlify-honeypot="bot-field"
                   hidden
                 >  
-                
+                <input type="hidden" name="form-name" value="contact" />     
                 <label htmlFor="checkbox" className="mr-2">Lloyds:</label>
                 <input
                     type="checkbox"
