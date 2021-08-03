@@ -330,8 +330,6 @@ const IndexPage = () => {
         name="contact-plevin"
         method="post"
         action="/thank-you/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >  
       <input type="hidden" name="form-name" value="contact-plevin" />
 
