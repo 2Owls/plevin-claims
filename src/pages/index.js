@@ -53,7 +53,7 @@ const IndexPage = () => {
      fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact-plevin", ...values})
+        body: encode({ "form-name": "contact", ...values})
       })
       .then((response) => {
         navigate("/thank-you/")
@@ -72,7 +72,7 @@ const IndexPage = () => {
   <Layout>
 
               <form  
-                  name="contact-plevin"
+                  name="contact"
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
@@ -330,13 +330,13 @@ const IndexPage = () => {
       <h1>Start your free online Plevin Check Now</h1>
       <p>Answer the quick questions below to see if you may have a claim</p> 
       <form
-        name="contact-plevin"
+        name="contact"
         method="post"
         action="/thank-you/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"        
       >  
-      <input type="hidden" name="form-name" value="contact-plevin" />     
+      <input type="hidden" name="form-name" value="contact" />     
 
       {formStep === 0 && (     
           <section className="section">
